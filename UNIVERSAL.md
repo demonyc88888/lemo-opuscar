@@ -10,7 +10,7 @@
 |---|---|---|---|
 | Claude Code | Claude Opus | 上游插件市场 / clone | 上游官方版本 |
 | Codex | GPT-5 系 Codex | clone（AGENTS.md 直用）/ `.agents/skills` | **已打包，基准片待测** |
-| DeepSeek Harness（dsh） | DeepSeek V4 等 | clone 模式先行 | 待适配 |
+| DeepSeek Harness（dsh） | DeepSeek / 第三方 provider | clone（AGENTS.md 直用）/ `.dsh/skills`（rank 100） | **已打包，模型成片质量待实测**（dsh 0.2.1-rc.2 开发者预览版） |
 | WorkBuddy（腾讯） | 平台模型 | SKILL.md zip 上传（fork Releases 下载） | **已打包，运行环境待实测** |
 
 ## 各平台入口
