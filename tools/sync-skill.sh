@@ -7,6 +7,8 @@
 #   + agents/openai.yaml sidecar from adapters/codex/openai.yaml (Codex UI metadata)
 #   packages/workbuddy/lemo-opuscar/                     (WorkBuddy: folder form; zip it or
 #                                                        the root form — see adapters/WORKBUDDY.md)
+#   .dsh/skills/lemo-opuscar/                            (DeepSeek Harness: project-level,
+#                                                        rank 100, the highest discovery priority)
 #
 # The copies are generated, never hand-edited: edit the source (or the sidecar
 # template), then re-run this script. Idempotent; safe to run after every
@@ -35,6 +37,15 @@ sync_workbuddy() {
   echo "workbuddy: $dst"
 }
 
+sync_dsh() {
+  dst="$ROOT/.dsh/skills/lemo-opuscar"
+  rm -rf "$dst"
+  mkdir -p "$dst"
+  cp -R "$SRC/." "$dst/"
+  echo "dsh:    $dst"
+}
+
 sync_codex
 sync_workbuddy
+sync_dsh
 echo "done. Commit the regenerated copies together with the source change."
