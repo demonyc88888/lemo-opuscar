@@ -1,0 +1,6 @@
+interface:
+  display_name: "Lemo-Opuscar"
+  short_description: "Direct a short film made entirely in code, in one of 51 library styles"
+  default_prompt: "Make a 30-second film in the Blueprint style about my topic."
+policy:
+  allow_implicit_invocation: true
