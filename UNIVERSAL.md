@@ -11,13 +11,13 @@
 | Claude Code | Claude Opus | 上游插件市场 / clone | 上游官方版本 |
 | Codex | GPT-5 系 Codex | clone（AGENTS.md 直用）/ `.agents/skills` | **已打包，基准片待测** |
 | DeepSeek Harness（dsh） | DeepSeek V4 等 | clone 模式先行 | 待适配 |
-| WorkBuddy（腾讯） | 平台模型 | SKILL.md zip 上传 | 待适配（先测运行环境承载力） |
+| WorkBuddy（腾讯） | 平台模型 | SKILL.md zip 上传（fork Releases 下载） | **已打包，运行环境待实测** |
 
 ## 各平台入口
 
 - Codex：[`adapters/CODEX.md`](adapters/CODEX.md)
+- WorkBuddy：[`adapters/WORKBUDDY.md`](adapters/WORKBUDDY.md)（含 [`冒烟测试规程`](adapters/workbuddy/SMOKE-TEST.md)）
 - DeepSeek Harness：待补（`adapters/DEEPSEEK-DSH.md`）
-- WorkBuddy：待补（`adapters/WORKBUDDY.md`）
 
 ## 一份源，多处生成
 
